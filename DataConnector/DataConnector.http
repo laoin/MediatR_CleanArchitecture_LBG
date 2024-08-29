@@ -1,0 +1,6 @@
+@DataConnector_HostAddress = http://localhost:5027
+
+GET {{DataConnector_HostAddress}}/api/test
+Accept: application/json
+
+###

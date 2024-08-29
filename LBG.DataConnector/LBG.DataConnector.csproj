@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7307a2db-04a5-4ff0-a6c4-ab9bf9809b56</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Nuget.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="nuget.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InHub.Connectors.AspNetCore" Version="0.3.0" />
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LBG.DataConnector.Application\LBG.DataConnector.Application.csproj" />
+    <ProjectReference Include="..\LBG.DataConnector.Infrastructure\LBG.DataConnector.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

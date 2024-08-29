@@ -1,0 +1,6 @@
+@LBG.DataConnector.App_HostAddress = http://localhost:5252
+
+GET {{LBG.DataConnector.App_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
