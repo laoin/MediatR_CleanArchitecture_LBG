@@ -23,6 +23,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBG.DataConnector.Custom.JJ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBG.DataConnector.App", "LBG.DataConnector.App\LBG.DataConnector.App.csproj", "{D5CCB57D-30FF-4AC4-8D00-7F00BBDBEF37}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQLTables", "SQLTables", "{2E83AEDF-0111-4605-BC97-505FDC1E2095}"
+	ProjectSection(SolutionItems) = preProject
+		Sql_LBG_DataLocal.sql = Sql_LBG_DataLocal.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
