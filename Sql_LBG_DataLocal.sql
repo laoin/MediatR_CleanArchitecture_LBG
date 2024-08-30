@@ -1,3 +1,9 @@
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'SamplesDB')
+BEGIN
+    CREATE DATABASE SamplesDB;
+END
+GO
+
 USE [SamplesDB]
 GO
 /****** Object:  Table [dbo].[DecisionMadeData]    Script Date: 29/8/2024 18:46:31 ******/
